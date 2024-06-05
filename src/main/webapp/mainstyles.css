@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #708090;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px; /* Додайте відступ вище від картинки */
+}
+
+img[src*="title.png"] {
+    display: block;
+    margin: 0 auto; /* Вирівнювання картинки по центру горизонтально */
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.top-left-container {
+    background-color: #cccccc;
+    border: 2px solid #000;
+    padding: 19px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+
+.favorite-tales,
+.featured-tales {
+    text-shadow:
+  1px 1px 1px gray,
+  2px 2px 1px gray;
+    color: yellow;
+    line-height: 40px;
+    border: none;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+    font-size: 20px;
+    margin: 5px;    
+}
+
+.Back-to-Main-Page {
+        text-shadow:
+  1px 1px 1px gray,
+  2px 2px 1px gray;
+    color: white;
+    line-height: 40px;
+    border: none;
+    padding: 4px 20px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+    font-size: 20px;
+    margin: 0px;  
+}
+
+.featured-tales:hover {
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,.5);
+}
+
+.favorite-tales:hover {
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,.5);
+}
+
+.Back-to-Main-Page:hover {
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(0,0,0,.5);
+}
+
+.top-right-container {
+    background-color: #cccccc;
+    border: 2px solid #000;
+    padding: auto;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    text-decoration: none;
+}
+
+.login {
+    font-size: 40px;
+    color: black;
+}
+
+.logout {
+    font-size: 40px;
+    color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.resizable-container {
+    background-color: #cccccc;
+    border: 2px solid #000;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.story-title {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.story-name {
+    flex-grow: 1;
+    text-align: left;
+    text-shadow:
+  1px 1px 1px gray,
+  1px 1px 1px gray;
+}
+
+.button-container {
+    display: flex;
+    gap: 5px; /* Відстань між кнопками */
+}
+
+.like-btn,
+.add-to-favorite-btn {
+    border: none;
+    color: white;
+    padding: 4px 20px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.like-btn {
+    background-color: #4CAF50;
+}
+
+.add-to-favorite-btn {
+    background-color: #BDB76B;
+    margin-right: 0px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-left-container,
+    .top-right-container {
+        position: static;
+        width: 100%;
+        margin: 0;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .resizable-container {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-left-container,
+    .top-right-container {
+        padding: 10px;
+    }
+
+    .story-title {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .like-btn,
+    .add-to-favorite-btn {
+        font-size: 14px;
+        padding: 2px 10px;
+    }
+    
+}
+
