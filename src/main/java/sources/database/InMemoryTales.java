@@ -12,7 +12,6 @@ public class InMemoryTales {
 
     public static void setServletContext(ServletContext context) {
         if (context != null) {
-            // Update the file name to be based on the real path
             fileName = context.getRealPath("/WEB-INF/data/tales.dat");
             System.out.println("File path for tales.dat: " + fileName);
             loadTales();

@@ -9,12 +9,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 20px; /* Додайте відступ вище від картинки */
+    margin-top: 20px;
 }
 
 img[src*="title.png"] {
     display: block;
-    margin: 0 auto; /* Вирівнювання картинки по центру горизонтально */
+    margin: 0 auto;
 }
 
 .main-container {
@@ -160,7 +160,7 @@ main {
 
 .button-container {
     display: flex;
-    gap: 5px; /* Відстань між кнопками */
+    gap: 5px;
 }
 
 .like-btn,

@@ -1,10 +1,10 @@
         body {
-            height: 100vh; /* Змініть висоту на 100vh, щоб покрити всю висоту екрану */
+            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0; /* Видаліть стандартні відступи */
-            background-color: #f3f4f6; /* Додайте фон для покращення вигляду */
+            margin: 0;
+            background-color: #f3f4f6;
         } 
         .form {
             background-color: #fff;
