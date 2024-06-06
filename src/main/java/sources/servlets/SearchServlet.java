@@ -3,8 +3,10 @@ import javax.servlet.http.*;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import javax.servlet.annotation.WebServlet;
 import sources.entities.Tale;
 
+@WebServlet("/SearchServlet")
 public class SearchServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
